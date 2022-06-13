@@ -6,6 +6,7 @@ public class TicTacToe {
         System.out.println("Welcome to Tic Tac Toe Game ");
         createBoard();
         playerChoice();
+        showboard();
     }
     public static void createBoard(){
         char[] board = new char[10];
@@ -26,5 +27,12 @@ public class TicTacToe {
             computerPlayer = 'O';
         }
         System.out.println("player choice is: "+player+" computer choice is: "+ computerPlayer);
+    }
+    public static void showboard() {
+        System.out.println(" " + board[1] + " | " + board[2] + " | " + board[3]);
+        System.out.println("-----------");
+        System.out.println(" " + board[4] + " | " + board[5] + " | " + board[6]);
+        System.out.println("-----------");
+        System.out.println(" " + board[7] + " | " + board[8] + " | " + board[9]);
     }
 }
